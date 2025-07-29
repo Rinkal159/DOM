@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Live Preview</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="main">
+            <div class="first-half">
+                <h1 class="heading">Profile Form</h1>
+                <p class="intro-line">Enter your information below to see it displayed in real-time:</p>
+                <form action="" class="form">
+                    <label class="label" for="name">Name : </label>
+                    <input class="input" type="text" name="name" id="name" autocomplete="off" required>
+
+                    <label class="label" for="jobTitle">Job title : </label>
+                    <input class="input" type="text" name="jobTitle" id="jobTitle" autocomplete="off" required>
+
+                    <label class="label" for="age">Age : </label>
+                    <input class="input" type="number" name="age" id="age" autocomplete="off" required>
+
+                    <label class="label" for="bio">Bio : </label>
+                    <textarea class="input" name="bio" id="bio" rows="5" autocomplete="off" required></textarea>
+
+                    <button class="btn" type="submit">Register</button>
+                </form>
+            </div>
+
+            <div class="preview">
+                <h1 class="second-half-heading">Profile preview</h1>
+                <div class="info">
+                    <h4>Name : <p id="previewName" class="value ">Not Provided</p>
+                    </h4>
+                    <h4>Job title : <p id="previewJobTitle" class="value ">Not Provided</p>
+                    </h4>
+                    <h4>Age : <p id="previewAge" class="value ">Not Provided</p>
+                    </h4>
+                    <h4>Bio : <p id="previewBio" class="value ">Not Provided</p>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>
