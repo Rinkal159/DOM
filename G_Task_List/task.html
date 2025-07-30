@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner">
+            <h1 class="heading">Task List</h1>
+            <form id="form" class="form">
+                <input id="input" type="text" class="input" placeholder="Add a new task" autocomplete="off">
+                <button id="btn" class="btn">Add</button>
+            </form>
+            <div class="list-div">
+                <ul id="list">
+                </ul>
+            </div>
+            <div class="info">
+                <p class="total common">Total Tasks :
+                <p id="total" class="common">0</p>
+                </p>
+                <p class="completed common">Completed :
+                <p id="completed" class="common">0</p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="task.js"></script>
+</body>
+
+</html>
