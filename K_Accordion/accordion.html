@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="accordion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Accordion</h1>
+
+        <div class="content">
+            <section class="section">
+                <div data-id="about" id="about" class="title">
+                    About us <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div data-id="about" class="desc hide">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus, natus.
+                </div>
+            </section>
+
+            <section class="section">
+                <div data-id="service" id="service" class="title">
+                    Services <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div data-id="service" class="desc hide">
+                    Desciption of services
+                </div>
+            </section>
+
+            <section class="section">
+                <div data-id="contact" id="contact" class="title">
+                    Contacts <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div data-id="contact" class="desc hide">
+                    Desciption of contacts
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="accordion.js"></script>
+</body>
+
+</html>
