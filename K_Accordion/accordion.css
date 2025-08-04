@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+.section {
+    border: none;
+    box-shadow: 0 0 0 .5px rgb(71, 71, 71);
+    margin: 20px;
+    border-radius: 5px;
+    width: 30vw;
+}
+
+.title {
+    padding-bottom: 10px;
+    background-color: rgb(210, 210, 210);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s ease-out;
+    position: relative;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+.title:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+.desc {
+    padding: 10px;
+}
+
+
+i {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transition: .3s ease-out;
+}
+
+
+/** JS classes */
+.hide {
+    display: none;
+}
+.show {
+    display: inline-block;
+}
+.title-radius {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.rotate {
+    transform: rotate(180deg);
+}
