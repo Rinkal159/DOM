@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    margin-inline: auto;
+}
+
+.heading {
+    padding: 20px 0;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: .5px solid gray;
+    box-shadow: 3px 4px 6px -2px rgba(0, 0, 0, 0.205);
+    border-radius: 5px;
+}
+
+.inner-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.img {
+    width: 12vw;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.btn-cont {
+    margin-top: 15px;
+    padding: 10px 20px;
+    box-shadow: 0 0 0 1px rgb(87, 178, 235);
+    border: none;
+    background-color: rgb(87, 178, 235);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    transition: .3s ease-out;
+}
+
+.btn {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-cont:hover {
+    background-color: rgb(62, 146, 199);
+}
+
+.btn-cont:active {
+    background-color: rgb(24, 106, 157);
+}
+
+.cartStat {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.fa-square-plus {
+    color: green;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.fa-square-minus {
+    color: rgb(179, 12, 12);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.count {
+    font-weight: 500;
+}
+
+
+/** CART */
+.cart {
+    margin-top: 50px;
+    width: 100%;
+    border: .5px solid gray;
+    box-shadow: 3px 4px 6px -2px rgba(0, 0, 0, 0.205);
+    border-radius: 5px;
+    min-height: 40vh;
+    position: relative;
+}
+
+.cart-heading {
+    padding: 10px 0 10px 10px;
+}
+
+.cart-item {
+    padding: 15px;
+}
+
+.divCartGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.removeDiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.removeCount {
+    font-size: .9rem;
+    font-weight: 500;
+    border: 2px solid rgb(42, 139, 199);
+    border-radius: 5px;
+    padding: 2px 8px;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid rgb(0, 177, 50);
+    border-radius: 5px;
+    padding: 5px 7px;
+}
+.total {
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.remove {
+    padding: 8px 10px;
+    background-color: rgb(210, 43, 43);
+    box-shadow: 0 0 0 1px rgb(210, 43, 43);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s ease-out;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.remove:hover {
+    background-color: rgb(167, 15, 15);
+}
+
+
+/** JS classes */
+.btnChange {
+    border: 2px solid rgb(87, 178, 235);
+    background-color: white;
+    color: rgb(15, 111, 172);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnChange:hover {
+    background-color: white;
+}
+
+.hide {
+    display: none;
+}
