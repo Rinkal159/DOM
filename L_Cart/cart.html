@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Shop</h1>
+        <div class="item">
+
+            <!-- tshirt -->
+            <div class="tshirt group">
+                <img class="img" src="./img/tshirt.jpg" alt="">
+                <div class="inner-group">
+                    <div class="info">
+                        <h4 data-id="TShirt">T-Shirt</h4>
+                        <span>$<span>19.99</span></span>
+                    </div>
+                    <div class="btn-cont">
+                        <button data-id="TShirt" class="btn">Add to cart</button>
+                        <div class="cartStat hide">
+                            <p class="plus"><i class="fa-regular fa-square-plus"></i></p>
+                            <p class="count"></p>
+                            <p class="minus"><i class="fa-regular fa-square-minus"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- shoe -->
+            <div class="shoe group">
+                <img class="img" src="./img/shoe.jpg" alt="">
+                <div class="inner-group">
+                    <div class="info">
+                        <h4 data-id="Shoe">Shoe</h4>
+                        <span>$<span>49.99</span></span>
+                    </div>
+                    <div class="btn-cont">
+                        <button data-id="Shoe" class="btn">Add to cart</button>
+                        <div class="cartStat hide">
+                            <p class="plus"><i class="fa-regular fa-square-plus"></i></p>
+                            <p class="count"></p>
+                            <p class="minus"><i class="fa-regular fa-square-minus"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- purse -->
+            <div class="purse group">
+                <img class="img" src="./img/purse.jpg" alt="">
+                <div class="inner-group">
+                    <div class="info">
+                        <h4 data-id="Purse">Purse</h4>
+                        <span>$<span>79.99</span></span>
+                    </div>
+                    <div class="btn-cont">
+                        <button data-id="Purse" class="btn">Add to cart</button>
+                        <div class="cartStat hide">
+                            <p class="plus"><i class="fa-regular fa-square-plus"></i></p>
+                            <p class="count"></p>
+                            <p class="minus"><i class="fa-regular fa-square-minus"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dress -->
+            <div class="dress group">
+                <img class="img" src="./img/dress.jpg" alt="">
+                <div class="inner-group">
+                    <div class="info">
+                        <h4 data-id="Dress">Dress</h4>
+                        <span>$<span>199.99</span></span>                   
+                    </div>
+                    <div class="btn-cont">
+                        <button data-id="Dress" class="btn">Add to cart</button>
+                        <div class="cartStat hide">
+                            <p class="plus"><i class="fa-regular fa-square-plus "></i></p>
+                            <p class="count"></p>
+                            <p class="minus"><i class="fa-regular fa-square-minus "></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2 class="cart-heading">Shopping cart</h2>
+            <div class="cart-items">
+
+            </div>
+            <div class="total hide">Total : $<span id="total"></span></div>
+        </div>
+    </div>
+
+
+    <script src="cart.js"></script>
+</body>
+
+</html>
