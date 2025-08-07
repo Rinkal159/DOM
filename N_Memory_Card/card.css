@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading {
+    padding: 20px;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.info {
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+}
+
+.hide, .show {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    font-size: 2rem;
+    backface-visibility: hidden;
+    border: 1px solid rgb(84, 153, 226);
+    border-radius: 10px;
+    transition: .1s ease-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    background-color: rgb(84, 153, 226);
+}
+.hide:hover {
+    background-color: rgb(61, 128, 199);
+}
+
+.show {
+    background-color: white;
+    box-shadow: 3px 4px 5px -2px rgba(0, 0, 0, 0.237);
+    transform: rotateY(180deg);
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 0 1px rgb(34, 158, 20);
+    background-color: rgb(34, 158, 20);
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 20px;
+    transition: .3s ease-out;
+}
+.btn:hover {
+    background-color: rgb(21, 131, 9);
+}
+.btn:active {
+    background-color: rgb(15, 99, 6);
+    transform: scale(.95);
+}
+
+/** JS Classes */
+.rotate {
+    transform: rotateY(180deg);
+}
+.match {
+    cursor: not-allowed;
+    box-shadow: 0 0 0 1.5px rgb(84, 153, 226);
+}
